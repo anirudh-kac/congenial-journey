@@ -2,6 +2,13 @@
 
 time=$(date '+%Y-%m-%d %H:%M:%S')
 
+if ![[-n $1]; then
+
+	echo "No message"
+	return 1
+fi
+
+
 echo "$1" > "$time.txt"
 
 git add .
