@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "@1" > note.txt
+echo "$1" > note.txt
 
 git add .
 git commit -m "new note"
