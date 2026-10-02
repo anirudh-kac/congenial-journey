@@ -2,7 +2,7 @@
 
 time=$(date '+%Y-%m-%d %H:%M:%S')
 
-if ![[-n "$1"]; then
+if ![[ -n "$1" ]]; then
 
 	echo "No message"
 	return 1
